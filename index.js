@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 var prefix = "/";
 
-client.login("NTAwNjM3ODIyNjI2MTY4ODUz.DqN2ow._L4LEVsfekJLRRl95eXUacK59BU");
+clie
 
 client.on("ready", () => {
     console.log("bot pret")
@@ -85,22 +85,5 @@ client.on('message', message => {
               });
             } else {
               // The mentioned user isn't in this guild
-              message.reply('That user isn\'t in this guild!');
-            }
-          // Otherwise, if no user was mentioned
-          } else {
-            message.reply('You didn\'t mention the user to kick!');
-          }
-        }
-      })
-
-      // Create an event listener for new guild members
-client.on('guildMemberAdd', member => {
-    // Send the message to a designated channel on a server:
-    const channel = member.guild.channels.find(ch => ch.name === 'accueil');
-    // Do nothing if the channel wasn't found on this server
-    if (!channel) return;
-    // Send the message, mentioning the member
-    channel.send(`${member} Bienvenue sur le serveur discord`);
-
+              message.reply('That user isn\'t
 });
